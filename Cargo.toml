@@ -1,0 +1,14 @@
+[package]
+name = "zk-term"
+version = "0.1.0"
+authors = ["fteychene <francois.teychene@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+termion = "1.5"
+tui = "0.5"
+zookeeper = "0.5"
+log = "0.4"
+env_logger = "0.5"
+failure = "0.1.5"
+structopt = "0.2"
