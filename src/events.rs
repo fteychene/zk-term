@@ -63,16 +63,6 @@ impl Events {
                 }
             })
         };
-//        let tick_handle = {
-//            let tx = tx.clone();
-//            thread::spawn(move || {
-//                let tx = tx.clone();
-//                loop {
-//                    tx.send(Event::Tick).unwrap();
-//                    thread::sleep(config.tick_rate);
-//                }
-//            })
-//        };
         Events {
             rx,
             tx,

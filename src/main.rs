@@ -62,9 +62,6 @@ fn run() -> Result<(), Error> {
     let term_exists = zk.exists("/term", false)?;
     if term_exists.is_none() { create_term_data(&zk)? }
 
-    let (data, _) = zk.get_data("/term", false)?;
-    let data_string = String::from_utf8(data)?;
-
     let events = Events::new();
 
     let stdin = stdin();
